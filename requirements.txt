@@ -1,2 +1,3 @@
-Cython==0.24.1
+Cython==0.25.2
 Kivy==1.10.0
+Kivy-Garden==0.1.4
