@@ -1,0 +1,53 @@
+#:kivy 1.0.9
+
+<PoolSide>
+	orient:0
+    canvas:
+        Rectangle:
+            id: s1
+            pos: self.pos
+            size: self.size
+
+<PoolBall>
+    size: 50, 50 
+    canvas:
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<PoolGame>:
+    side_left : left_side
+    side_right : right_side
+    side_up : upside
+    side_bottom : bottom_side
+    ball: w_ball
+
+
+    Label:
+
+    PoolSide:
+        id: upside
+        pos: 0, root.height*0.95
+        size: root.width, root.height*0.05
+    
+    PoolSide:
+        id: left_side
+        orient:1
+        pos: 0,0
+        size: root.width*0.05 , root.height
+        
+    PoolSide:
+        id: right_side
+        orient:1
+        pos: root.width*0.95, 0
+        size: root.width*0.05 , root.height
+        
+    PoolSide:
+        id: bottom_side
+        pos: 0,0 
+        size: root.width, root.height*0.05
+
+    PoolBall:
+        id: w_ball
+        center: self.parent.center
+        size: root.height*0.05, root.height*0.05
