@@ -13,22 +13,11 @@ before_install:
   # https://kivy.org/docs/installation/installation-linux.html#dependencies-with-sdl2
   - sudo add-apt-repository ppa:kivy-team/kivy-daily -y
   - sudo apt-get update
-  #- sudo apt-get install python-setuptools python-pygame python-opengl python-pip python-dev
-  #- sudo apt-get python-gst0.10 python-enchant gstreamer0.10-plugins-good python-dev
-  #- sudo apt-get build-essential libgl1-mesa-dev-lts-quantal libgles2-mesa-dev-lts-quantal #python-pip
-  #- sudo pip install pygments docutils
-  #- sudo pip install cython
+  - sudo apt-get install python3-kivy -y
 
-  #- sudo apt-get install python-pip build-essential git python-dev libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev zlib1g-dev mercurial
 
 # command to install dependencies
 install:
-  #- pip install hg+http://bitbucket.org/pygame/pygame
-  #- pip install --upgrade cython pil --use-mirrors
-  #- make
-  #- pip install -r requirements.txt
-  #- pip install kivy
-  - sudo apt-get install python3-kivy -y
 
 script:
   - python3 tst_basicBallActions.py
