@@ -31,4 +31,4 @@ install:
   - sudo apt-get install python3-kivy -y
 
 script:
-  - python tst_basicBallActions.py
+  - python3 tst_basicBallActions.py
