@@ -11,7 +11,7 @@ python:
 before_install:
   # Required by Kivy
   # https://kivy.org/docs/installation/installation-linux.html#dependencies-with-sdl2
-  - sudo add-apt-repository ppa:kivy-team/kivy-daily
+  - sudo add-apt-repository ppa:kivy-team/kivy-daily -y
   - sudo apt-get update
   #- sudo apt-get install python-setuptools python-pygame python-opengl python-pip python-dev
   #- sudo apt-get python-gst0.10 python-enchant gstreamer0.10-plugins-good python-dev
@@ -28,4 +28,4 @@ install:
   #- make
   #- pip install -r requirements.txt
   #- pip install kivy
-  - sudo apt-get install python3-kivy
+  - sudo apt-get install python3-kivy -y
