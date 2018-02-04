@@ -29,3 +29,6 @@ install:
   #- pip install -r requirements.txt
   #- pip install kivy
   - sudo apt-get install python3-kivy -y
+
+script:
+  - python tst_basicBallActions.py
