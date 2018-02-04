@@ -17,7 +17,6 @@ before_install:
 
 
 # command to install dependencies
-install:
 
 script:
   - python3 tst_basicBallActions.py
