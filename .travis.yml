@@ -13,8 +13,8 @@ before_install:
   # https://kivy.org/docs/installation/installation-linux.html#dependencies-with-sdl2
   - sudo apt-get update
   - sudo apt-get install python-setuptools python-pygame python-opengl
-  - sudo apt-get python-gst0.10 python-enchant gstreamer0.10-plugins-good python-dev
-  - sudo apt-get build-essential libgl1-mesa-dev-lts-quantal libgles2-mesa-dev-lts-quantal python-pip
+  #- sudo apt-get python-gst0.10 python-enchant gstreamer0.10-plugins-good python-dev
+  - sudo apt-get build-essential libgl1-mesa-dev-lts-quantal libgles2-mesa-dev-lts-quantal #python-pip
   - sudo pip install pygments docutils
   - sudo pip install --upgrade Cython==0.27.3
 
